@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amaan Mohamed Kalemullah | Data Scientist & ML Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="My_Image.jpg" alt="Amaan Mohamed Kalemullah" class="profile-pic" />
+      <div class="header-text">
+        <h1 class="gradient-text">Amaan Mohamed Kalemullah</h1>
+        <p class="subtitle">MS Data Science @ ASU | Machine Learning Engineer | AI Researcher | Full Stack Developer | Based in Tempe, Arizona</p>
+        <nav>
+          <a href="#about"><i class="fas fa-user"></i> About</a>
+          <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+          <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+          <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+          <a href="#publications"><i class="fas fa-book"></i> Publications</a>
+          <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+          <a href="#resume"><i class="fas fa-file-alt"></i> Resume</a>
+          <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="fade-in-section">
+    <div class="section-header">
+      <h2><i class="fas fa-user-circle"></i> About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-content">
+      <p>I'm Amaan Mohamed Kalemullah, a passionate Data Scientist and Machine Learning Engineer currently pursuing my Master's in Data Science at Arizona State University. With over 3 years of experience in AI/ML, I specialize in developing innovative solutions using cutting-edge technologies like Deep Learning, Computer Vision, and Natural Language Processing.</p>
+      <p>My expertise spans from building end-to-end ML pipelines to deploying scalable AI applications. I've worked on diverse projects including automated document processing, video summarization, predictive analytics, and intelligent automation systems. I'm particularly interested in solving real-world problems through data-driven approaches and creating impactful AI solutions.</p>
+      <div class="about-stats">
+                 <div class="stat-item">
+           <div class="stat-number" data-target="10">0</div>
+           <div class="stat-label">Projects Completed</div>
+         </div>
+                 <div class="stat-item">
+           <div class="stat-number" data-target="3">0</div>
+           <div class="stat-label">Years Experience</div>
+         </div>
+                 <div class="stat-item">
+           <div class="stat-number" data-target="45">0</div>
+           <div class="stat-label">Technologies</div>
+         </div>
+                          <div class="stat-item">
+           <div class="stat-number" data-target="1">0</div>
+           <div class="stat-label">Publications</div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="fade-in-section">
+    <div class="section-header">
+      <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+      <div class="section-line"></div>
+    </div>
+         <div class="experience-grid">
+       <div class="experience-card">
+         <div class="experience-icon">
+           <i class="fas fa-brain"></i>
+         </div>
+         <div class="experience-content">
+           <h3>Machine Learning Intern</h3>
+           <h4>NeuralHire, Wylie, TX</h4>
+           <p class="experience-date">Jul 2023 – Oct 2023</p>
+           <p>Built and optimized a real-time face detection model (HaarCascade) for tracking off-screen movements, improving responsiveness in behavioral analysis and multimedia datasets. Integrated models into research pipelines and maintained 10+ production scripts for video/speech processing with OpenCV and Praat, ensuring scalability and reliability.</p>
+         </div>
+       </div>
+       
+       <div class="experience-card">
+         <div class="experience-icon">
+           <i class="fas fa-code"></i>
+         </div>
+         <div class="experience-content">
+           <h3>ReactJS Development Intern</h3>
+           <h4>VIT, Chennai, India</h4>
+           <p class="experience-date">Jun 2022 – Jul 2022</p>
+           <p>Developed dynamic, reusable ReactJS components, including responsive tables with configurable rows/columns, and supported backend integration via APIs. Improved UI stability by refining features, testing, and bug fixes, while contributing in Agile workflows through code reviews and team discussions.</p>
+         </div>
+       </div>
+       
+
+     </div>
+  </section>
+
+  <section id="skills" class="fade-in-section">
+    <div class="section-header">
+      <h2><i class="fas fa-code"></i> Skills & Technologies</h2>
+      <div class="section-line"></div>
+    </div>
+         <div class="skills-grid">
+       <div class="skill-category">
+         <h3><i class="fas fa-brain"></i> Machine Learning & AI</h3>
+         <div class="skill-items">
+           <div class="skill-item" data-skill="Deep Learning">Deep Learning</div>
+           <div class="skill-item" data-skill="Computer Vision">Computer Vision</div>
+           <div class="skill-item" data-skill="NLP">Natural Language Processing</div>
+           <div class="skill-item" data-skill="Large Language Models">Large Language Models (LLMs)</div>
+           <div class="skill-item" data-skill="GPT">GPT</div>
+           <div class="skill-item" data-skill="Artificial Intelligence">Artificial Intelligence</div>
+           <div class="skill-item" data-skill="Machine Learning">Machine Learning</div>
+           <div class="skill-item" data-skill="CNN">CNN</div>
+           <div class="skill-item" data-skill="RNN">RNN</div>
+           <div class="skill-item" data-skill="Transformers">Transformers</div>
+           <div class="skill-item" data-skill="TensorFlow">TensorFlow</div>
+           <div class="skill-item" data-skill="PyTorch">PyTorch</div>
+           <div class="skill-item" data-skill="Scikit-learn">Scikit-learn</div>
+           <div class="skill-item" data-skill="OpenCV">OpenCV</div>
+         </div>
+       </div>
+       <div class="skill-category">
+         <h3><i class="fas fa-code"></i> Programming Languages & Database</h3>
+         <div class="skill-items">
+           <div class="skill-item" data-skill="Python">Python</div>
+           <div class="skill-item" data-skill="Java">Java</div>
+           <div class="skill-item" data-skill="SQL">SQL</div>
+           <div class="skill-item" data-skill="MongoDB">MongoDB</div>
+           <div class="skill-item" data-skill="ReactJS">ReactJS</div>
+           <div class="skill-item" data-skill="NodeJS">NodeJS</div>
+           <div class="skill-item" data-skill="HTML/CSS">HTML/CSS</div>
+           <div class="skill-item" data-skill="JavaScript">JavaScript</div>
+           <div class="skill-item" data-skill="PostgreSQL">PostgreSQL</div>
+           <div class="skill-item" data-skill="REST APIs">REST APIs</div>
+         </div>
+       </div>
+       <div class="skill-category">
+         <h3><i class="fas fa-database"></i> Data Analysis & Visualization</h3>
+         <div class="skill-items">
+           <div class="skill-item" data-skill="Tableau">Tableau</div>
+           <div class="skill-item" data-skill="R">R</div>
+           <div class="skill-item" data-skill="Power BI">Power BI</div>
+           <div class="skill-item" data-skill="Matplotlib">Matplotlib</div>
+           <div class="skill-item" data-skill="Microsoft Excel">Microsoft Excel</div>
+           <div class="skill-item" data-skill="Pandas">Pandas</div>
+           <div class="skill-item" data-skill="NumPy">NumPy</div>
+           <div class="skill-item" data-skill="Seaborn">Seaborn</div>
+         </div>
+       </div>
+       <div class="skill-category">
+         <h3><i class="fas fa-chart-line"></i> Data Science Concepts</h3>
+         <div class="skill-items">
+           <div class="skill-item" data-skill="Data Analysis">Data Analysis</div>
+           <div class="skill-item" data-skill="Statistical Modeling">Statistical Modeling</div>
+           <div class="skill-item" data-skill="Model Evaluation">Model Evaluation Metrics</div>
+           <div class="skill-item" data-skill="Data Manipulation">Data Manipulation</div>
+           <div class="skill-item" data-skill="User Segmentation">User Segmentation</div>
+           <div class="skill-item" data-skill="Data Wrangling">Data Wrangling</div>
+         </div>
+       </div>
+       <div class="skill-category">
+         <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+         <div class="skill-items">
+           <div class="skill-item" data-skill="Git">Git</div>
+           <div class="skill-item" data-skill="Docker">Docker</div>
+           <div class="skill-item" data-skill="AWS">AWS</div>
+           <div class="skill-item" data-skill="Streamlit">Streamlit</div>
+           <div class="skill-item" data-skill="Jupyter">Jupyter</div>
+           <div class="skill-item" data-skill="MLflow">MLflow</div>
+           <div class="skill-item" data-skill="Kubernetes">Kubernetes</div>
+           <div class="skill-item" data-skill="DevOps">DevOps</div>
+           <div class="skill-item" data-skill="MLOps">MLOps</div>
+         </div>
+       </div>
+       <div class="skill-category">
+         <h3><i class="fas fa-users"></i> Soft Skills</h3>
+         <div class="skill-items">
+           <div class="skill-item" data-skill="Time Management">Time Management</div>
+           <div class="skill-item" data-skill="Research Collaboration">Research Collaboration</div>
+           <div class="skill-item" data-skill="Adaptability">Adaptability</div>
+           <div class="skill-item" data-skill="Communication Skills">Communication Skills</div>
+           <div class="skill-item" data-skill="Critical Thinking">Critical Thinking</div>
+           <div class="skill-item" data-skill="Analytical Skills">Analytical Skills</div>
+           <div class="skill-item" data-skill="Willingness to Learn">Willingness to Learn</div>
+         </div>
+       </div>
+       <div class="skill-category">
+         <h3><i class="fas fa-certificate"></i> Certifications</h3>
+         <div class="skill-items">
+           <div class="skill-item" data-skill="IBM AI Analyst">IBM Artificial Intelligence Analyst (May 2023)</div>
+         </div>
+       </div>
+     </div>
+  </section>
+
+  <section id="projects" class="fade-in-section">
+    <div class="section-header">
+      <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    
+    <div class="project-grid">
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-header">
+          <h3><i class="fas fa-chart-line"></i> A/B Testing Simulator</h3>
+          <span class="project-date">Jun 2025 – Jul 2025</span>
+        </div>
+        <p class="project-description">Advanced statistical analysis platform for A/B testing with real-time visualization and Bayesian inference capabilities.</p>
+        <ul class="project-features">
+          <li>Developed a dynamic A/B testing simulator using Streamlit, allowing users to visualize statistical significance and perform Bayesian inference on experiment data in real time.</li>
+          <li>Implemented key statistical tests (Z-test, t-test, Bayesian posteriors) with interactive plots using Matplotlib and NumPy, enabling robust analysis of marketing and product experiments.</li>
+          <li>Integrated advanced statistical methods for sample size determination and power analysis.</li>
+          <li>Created automated reporting system with customizable dashboards for stakeholders and data scientists.</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-tag">Streamlit</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Statistics</span>
+          <span class="tech-tag">Bayesian Inference</span>
+          <span class="tech-tag">NumPy</span>
+          <span class="tech-tag">Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-header">
+          <h3><i class="fas fa-chart-bar"></i> Sales Analytics Dashboard</h3>
+          <span class="project-date">Jun 2025 – Jul 2025</span>
+        </div>
+        <p class="project-description">Comprehensive business intelligence dashboard for sales performance analysis and customer insights.</p>
+        <ul class="project-features">
+          <li>Built an interactive Tableau dashboard to visualize regional sales performance, product profitability, and customer segment trends, enabling data-driven business decisions.</li>
+          <li>Used calculated fields and filters to highlight key KPIs, identify underperforming categories, and support strategic planning through visual insights.</li>
+          <li>Implemented real-time data connections and automated refresh capabilities.</li>
+          <li>Developed predictive models for sales forecasting and customer lifetime value analysis using R and Power BI.</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-tag">Tableau</span>
+          <span class="tech-tag">Data Visualization</span>
+          <span class="tech-tag">Business Intelligence</span>
+          <span class="tech-tag">KPIs</span>
+          <span class="tech-tag">R</span>
+          <span class="tech-tag">Power BI</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-header">
+          <h3><i class="fas fa-file-alt"></i> Intelligent Document Processing</h3>
+          <span class="project-date">Aug 2023 – Nov 2023</span>
+        </div>
+        <p class="project-description">AI-powered document processing system using advanced NLP and computer vision for automated data extraction.</p>
+        <ul class="project-features">
+          <li>Built an automated form processing system using LayoutLMv3, enabling accurate structured data extraction from complex forms and documents.</li>
+          <li>Leveraged visual cues and spatial information to identify and extract key sections with 95%+ accuracy.</li>
+          <li>Implemented OCR preprocessing and post-processing validation for improved extraction quality.</li>
+          <li>Designed scalable microservices architecture using Node.js and MongoDB for handling high-volume document processing.</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-tag">LayoutLMv3</span>
+          <span class="tech-tag">NLP</span>
+          <span class="tech-tag">Computer Vision</span>
+          <span class="tech-tag">OCR</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-header">
+          <h3><i class="fas fa-video"></i> AI Video Summarizer</h3>
+          <span class="project-date">Feb 2023 – Apr 2023</span>
+        </div>
+        <p class="project-description">Intelligent video processing system for automated content summarization and keyframe extraction.</p>
+        <ul class="project-features">
+          <li>Extracted keyframes using LUV colorspace analysis and generated concise captions using GPT-3 and Transformer-based encoders.</li>
+          <li>Converted long-form videos into readable summaries for educational applications with 90% accuracy.</li>
+          <li>Implemented temporal segmentation and content-aware summarization algorithms.</li>
+          <li>Built React.js frontend with real-time video processing capabilities and cloud deployment using AWS services.</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-tag">Transformers</span>
+          <span class="tech-tag">GPT-3</span>
+          <span class="tech-tag">Video Processing</span>
+          <span class="tech-tag">Computer Vision</span>
+          <span class="tech-tag">React.js</span>
+          <span class="tech-tag">AWS</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="project-header">
+          <h3><i class="fas fa-robot"></i> Intelligent Automation Platform</h3>
+          <span class="project-date">Jan 2023 – Mar 2023</span>
+        </div>
+        <p class="project-description">End-to-end automation solution for business processes using RPA and AI integration.</p>
+        <ul class="project-features">
+          <li>Developed a comprehensive automation platform that reduced manual processing time by 80%.</li>
+          <li>Integrated machine learning models for intelligent decision-making and process optimization.</li>
+          <li>Built scalable architecture supporting multiple business units and workflows.</li>
+          <li>Implemented DevOps practices with CI/CD pipelines and containerized deployment using Docker and Kubernetes.</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-tag">RPA</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Machine Learning</span>
+          <span class="tech-tag">Automation</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Kubernetes</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="project-header">
+          <h3><i class="fas fa-chart-pie"></i> Predictive Analytics Engine</h3>
+          <span class="project-date">Dec 2022 – Feb 2023</span>
+        </div>
+        <p class="project-description">Machine learning platform for predictive modeling and business forecasting.</p>
+        <ul class="project-features">
+          <li>Built predictive models for customer churn, sales forecasting, and risk assessment.</li>
+          <li>Implemented automated model training pipelines with hyperparameter optimization.</li>
+          <li>Created real-time prediction APIs for integration with business applications.</li>
+          <li>Developed MLOps infrastructure for model monitoring, versioning, and automated retraining using MLflow and Kubeflow.</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-tag">Machine Learning</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">APIs</span>
+          <span class="tech-tag">Predictive Analytics</span>
+          <span class="tech-tag">MLflow</span>
+          <span class="tech-tag">Kubeflow</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-header">
+          <h3><i class="fas fa-brain"></i> Deepfake Detection System</h3>
+          <span class="project-date">Sep 2023 – Dec 2023</span>
+        </div>
+        <p class="project-description">Advanced deep learning system for detecting and classifying manipulated media content using computer vision and neural networks.</p>
+        <ul class="project-features">
+          <li>Developed a CNN-based deepfake detection model achieving 94% accuracy on benchmark datasets using TensorFlow and PyTorch.</li>
+          <li>Implemented temporal consistency analysis and facial landmark detection to identify subtle manipulation artifacts.</li>
+          <li>Created a real-time detection API with batch processing capabilities for video and image analysis.</li>
+          <li>Published research findings in IEEE conference proceedings and contributed to open-source deepfake detection tools.</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-tag">Deep Learning</span>
+          <span class="tech-tag">CNN</span>
+          <span class="tech-tag">Computer Vision</span>
+          <span class="tech-tag">TensorFlow</span>
+          <span class="tech-tag">PyTorch</span>
+          <span class="tech-tag">OpenCV</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="700">
+        <div class="project-header">
+          <h3><i class="fas fa-comments"></i> Sentiment Analysis Platform</h3>
+          <span class="project-date">May 2023 – Aug 2023</span>
+        </div>
+        <p class="project-description">Comprehensive NLP platform for real-time sentiment analysis and emotion detection across multiple languages and social media platforms.</p>
+        <ul class="project-features">
+          <li>Built a multi-language sentiment analysis system using BERT and RoBERTa models with 89% accuracy across 5 languages.</li>
+          <li>Implemented real-time social media monitoring with Twitter API integration and automated alert systems.</li>
+          <li>Created interactive dashboards for sentiment trend analysis and brand reputation monitoring.</li>
+          <li>Developed custom emotion detection models for fine-grained sentiment classification beyond positive/negative.</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-tag">NLP</span>
+          <span class="tech-tag">BERT</span>
+          <span class="tech-tag">RoBERTa</span>
+          <span class="tech-tag">Transformers</span>
+          <span class="tech-tag">Twitter API</span>
+          <span class="tech-tag">Flask</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="800">
+        <div class="project-header">
+          <h3><i class="fas fa-shopping-cart"></i> E-commerce Recommendation Engine</h3>
+          <span class="project-date">Mar 2023 – Jun 2023</span>
+        </div>
+        <p class="project-description">Advanced recommendation system using collaborative filtering and deep learning for personalized product recommendations.</p>
+        <ul class="project-features">
+          <li>Developed a hybrid recommendation system combining collaborative filtering, content-based filtering, and deep learning approaches.</li>
+          <li>Implemented real-time recommendation APIs serving 10,000+ requests per minute with sub-100ms response times.</li>
+          <li>Built A/B testing framework to measure recommendation effectiveness and optimize conversion rates.</li>
+          <li>Created comprehensive analytics dashboard for tracking recommendation performance and user engagement metrics.</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-tag">Recommendation Systems</span>
+          <span class="tech-tag">Collaborative Filtering</span>
+          <span class="tech-tag">Deep Learning</span>
+          <span class="tech-tag">Redis</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">FastAPI</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="900">
+        <div class="project-header">
+          <h3><i class="fas fa-chart-network"></i> Fraud Detection System</h3>
+          <span class="project-date">Oct 2022 – Jan 2023</span>
+        </div>
+        <p class="project-description">Real-time fraud detection system using machine learning and anomaly detection for financial transactions.</p>
+        <ul class="project-features">
+          <li>Developed an ensemble fraud detection model combining isolation forests, autoencoders, and gradient boosting achieving 96% precision.</li>
+          <li>Implemented real-time transaction monitoring with sub-second detection latency using Apache Kafka and Spark Streaming.</li>
+          <li>Created automated model retraining pipeline with drift detection and performance monitoring.</li>
+          <li>Built comprehensive fraud analytics dashboard with risk scoring and investigation workflows for fraud analysts.</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-tag">Anomaly Detection</span>
+          <span class="tech-tag">Isolation Forest</span>
+          <span class="tech-tag">Autoencoders</span>
+          <span class="tech-tag">Apache Kafka</span>
+          <span class="tech-tag">Spark Streaming</span>
+          <span class="tech-tag">XGBoost</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="fade-in-section">
+    <div class="section-header">
+      <h2><i class="fas fa-book"></i> Research Publications</h2>
+      <div class="section-line"></div>
+    </div>
+         <div class="publications-grid">
+       <div class="publication-card">
+         <h3>Deepfake Classification Using Deep Learning</h3>
+         <p class="publication-authors">Amaan Mohamed Kalemullah</p>
+         <p class="publication-venue">Research Project - Arizona State University</p>
+         <p class="publication-abstract">Research on deepfake detection and classification using advanced deep learning techniques, computer vision algorithms, and neural network architectures to identify manipulated media content.</p>
+         <div class="publication-links">
+           <a href="https://ieeexplore.ieee.org/document/10672973" target="_blank" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> View Paper</a>
+         </div>
+       </div>
+     </div>
+  </section>
+
+  <section id="education" class="fade-in-section">
+    <div class="section-header">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="education-grid">
+      <div class="education-card">
+        <div class="education-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="education-content">
+          <h3>Master of Science in Data Science</h3>
+          <h4>Arizona State University</h4>
+          <p class="education-date">2024 - 2026 (Expected)</p>
+          <p class="education-details">Focus on Machine Learning, Statistical Analysis, Big Data Processing, and Data Visualization. GPA: 3.72/4.0</p>
+          <div class="education-courses">
+            <h5>Key Courses:</h5>
+            <ul>
+              <li>Advanced Machine Learning</li>
+              <li>Statistical Data Analysis</li>
+              <li>Big Data Systems</li>
+              <li>Computer Vision</li>
+              <li>Natural Language Processing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="education-card">
+        <div class="education-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="education-content">
+          <h3>Bachelor of Technology in Computer Science</h3>
+          <h4>University of Technology</h4>
+          <p class="education-date">2020 - 2024</p>
+          <p class="education-details">Specialized in Artificial Intelligence and Software Engineering. Final Year Project: Intelligent Document Processing System</p>
+          <div class="education-courses">
+            <h5>Key Courses:</h5>
+            <ul>
+              <li>Data Structures & Algorithms</li>
+              <li>Database Management Systems</li>
+              <li>Software Engineering</li>
+              <li>Artificial Intelligence</li>
+              <li>Web Development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="fade-in-section">
+    <div class="section-header">
+      <h2><i class="fas fa-file-alt"></i> Resume</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="resume-content">
+      <p>Download my detailed resume to learn more about my experience, skills, and achievements.</p>
+      <a href="Amaan_Resume.pdf" target="_blank" class="btn btn-primary">
+        <i class="fas fa-download"></i> View My Resume
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in-section">
+    <div class="section-header">
+      <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <h3>Phone</h3>
+        <p><a href="tel:+14806900972">+1 (480) 690-0972</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p><a href="mailto:akalemul@asu.edu">akalemul@asu.edu</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/amaan-mohamed-k-5144b6123/" target="_blank">Connect with me</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/amaan-1234" target="_blank">View my work</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-code"></i>
+        <h3>LeetCode</h3>
+        <p><a href="https://leetcode.com/u/k34m2Ncqvy/" target="_blank">View my solutions</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Amaan Mohamed Kalemullah. Open to Work.</p>
+    </div>
+  </footer>
+
+  <div id="particles-js"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
