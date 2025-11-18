@@ -224,6 +224,28 @@ export default function Skills() {
     return getFilteredSkills(category).length > 0
   }
 
+  // Sort categories: matching ones first when searching, original order otherwise
+  const sortedCategories = searchQuery.trim() === "" 
+    ? skillCategories 
+    : [...skillCategories].sort((a, b) => {
+        const aHasMatches = hasMatches(a)
+        const bHasMatches = hasMatches(b)
+        const aMatchCount = getFilteredSkills(a).length
+        const bMatchCount = getFilteredSkills(b).length
+
+        // Categories with matches come first
+        if (aHasMatches && !bHasMatches) return -1
+        if (!aHasMatches && bHasMatches) return 1
+        
+        // If both have matches or both don't, sort by match count (descending)
+        if (aHasMatches && bHasMatches) {
+          return bMatchCount - aMatchCount
+        }
+        
+        // If neither has matches, maintain original order
+        return 0
+      })
+
   return (
     <section id="skills" ref={sectionRef} className="py-20 px-4 bg-muted/30 section-fade-in relative overflow-hidden">
       <SectionBackgroundAnimation />
@@ -263,7 +285,7 @@ export default function Skills() {
 
           {/* Category Cards Grid - Masonry Layout */}
           <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-            {skillCategories.map((category) => {
+            {sortedCategories.map((category) => {
               const filteredSkills = getFilteredSkills(category)
               const isActive = activeTab === category.id
               const categoryHasMatches = hasMatches(category)

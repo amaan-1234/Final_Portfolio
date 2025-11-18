@@ -8,12 +8,12 @@ import { SectionBackgroundAnimation } from "@/components/section-background-anim
 
 // Light color palette matching social sidebar buttons
 const projectColors = [
-  "rgba(5, 150, 105, 0.2)", // Light green (primary theme)
-  "rgba(234, 88, 12, 0.2)", // Light orange (secondary theme)
-  "rgba(0, 119, 181, 0.2)", // Light blue
-  "rgba(139, 92, 246, 0.2)", // Light purple
-  "rgba(20, 184, 166, 0.2)", // Light teal
-  "rgba(236, 72, 153, 0.2)", // Light pink
+  "rgba(5, 150, 105, 0.35)", // Light green (primary theme)
+  "rgba(234, 88, 12, 0.25)", // Light orange (secondary theme)
+  "rgba(0, 119, 181, 0.25)", // Light blue
+  "rgba(139, 92, 246, 0.25)", // Light purple
+  "rgba(20, 184, 166, 0.25)", // Light teal
+  "rgba(236, 72, 153, 0.25)", // Light pink
 ]
 
 const projects = [
@@ -209,7 +209,7 @@ export default function Projects() {
     <section id="projects" ref={sectionRef} className="py-12 px-4 section-fade-in relative overflow-hidden">
       <SectionBackgroundAnimation />
       <div className="max-w-6xl mx-auto relative z-10">
-        <div className="text-center mb-2">
+        <div className="text-center mb-4">
           <h2 className="text-4xl font-serif font-bold text-foreground mb-4">Featured Projects</h2>
           <p className="text-muted-foreground">
             {currentIndex + 1} of {projects.length}
@@ -301,7 +301,7 @@ export default function Projects() {
           </Button>
         </div>
 
-        <div className="flex justify-center gap-2 mt-4">
+        <div className="flex justify-center gap-2 mt-10">
           {projects.map((_, index) => (
             <button
               key={index}
