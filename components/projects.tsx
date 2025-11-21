@@ -18,6 +18,33 @@ const projectColors = [
 
 const projects = [
   {
+    title: "Real-time Conversational AI Platform with Historical Figures",
+    date: "Nov 2025",
+    description:
+      "Built a real-time conversational AI platform enabling users to chat with historical figures using Groq API (Llama 3.3 70B), voice cloning, and server-side streaming architecture.",
+    features: [
+      "Integrated Groq API with Next.js 16 App Router and ReadableStream API for sub-second response streaming across 8+ historical figure personas with custom prompt engineering",
+      "Developed voice-first experience using FastAPI microservice for voice cloning (XTTS v2 + Bark) with Web Speech API, delivering character-specific voices with automatic fallback to browser TTS",
+      "Implemented Wikipedia API for figure validation and dynamic prompt system with 8+ pre-configured historical personas, achieving authentic responses with automatic language detection",
+    ],
+    tech: [
+      "Groq API",
+      "Llama 3.3 70B",
+      "Next.js 16",
+      "FastAPI",
+      "XTTS v2",
+      "Bark",
+      "Web Speech API",
+      "Wikipedia API",
+      "Vercel",
+      "Python",
+      "ReadableStream API",
+      "TypeScript",
+    ],
+    github: "https://github.com/jayasurya3012/Technicia",
+    demo: "#",
+  },
+  {
     title: "Reinforcement Learning for EV Charging Optimization",
     date: "Jun 2025 – Nov 2025",
     description:
