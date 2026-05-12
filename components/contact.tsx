@@ -187,7 +187,7 @@ export default function Contact() {
                   <span className="text-sm font-semibold text-green-600 dark:text-green-400">Available for opportunities</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Graduating May 2026. Open to Data Analyst, Business Analyst, Data Scientist, and Data Engineer roles — in-person or remote.
+                  Recently graduated (MS Data Science, ASU — May 2026). Open to Data Analyst, Business Analyst, Data Scientist, and Data Engineer roles — in-person or remote.
                 </p>
               </CardContent>
             </Card>

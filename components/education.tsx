@@ -10,8 +10,8 @@ const education = [
     degree: "MS Data Science, Analytics and Engineering",
     institution: "Arizona State University",
     location: "Tempe, AZ",
-    period: "Aug 2024 – May 2026",
-    gpa: "3.67/4.00",
+    period: "Aug 2024 – May 2026 · Graduated",
+    gpa: "3.73/4.00",
     logo: "/asu.png",
     coursework: [
       "Statistics for Data Analysts",

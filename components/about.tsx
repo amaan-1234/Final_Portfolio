@@ -103,7 +103,7 @@ export default function About() {
                 <h3 className="text-lg font-semibold text-foreground">Actively Seeking</h3>
                 <span className="ml-auto flex items-center gap-1.5 text-xs font-medium text-green-600 dark:text-green-400 bg-green-500/10 px-2.5 py-1 rounded-full border border-green-500/20">
                   <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
-                  Available May 2026
+                  Available Now
                 </span>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">

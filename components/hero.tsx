@@ -31,7 +31,7 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-green-500/10 border border-green-500/30 rounded-full">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
               <span className="text-sm font-medium text-green-600 dark:text-green-400">
-                Open to full-time roles · Available May 2026
+                Recently Graduated · Actively Seeking Full-time Roles
               </span>
             </div>
           </div>
@@ -43,7 +43,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
-            MS Data Science @ ASU &nbsp;·&nbsp;{" "}
+            MS Data Science @ ASU (Graduated) &nbsp;·&nbsp;{" "}
             <span className="font-semibold text-primary">Machine Learning Engineer</span>
             &nbsp;·&nbsp;{" "}
             <span className="font-semibold text-primary">AI Researcher</span>
