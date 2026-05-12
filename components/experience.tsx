@@ -2,27 +2,14 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Brain, Code, GraduationCap, TrendingUp, Rocket, ArrowRight } from "lucide-react"
+import { Brain, GraduationCap, TrendingUp, Users, ArrowRight } from "lucide-react"
 
 const experiences = [
-  {
-    icon: Code,
-    title: "ReactJS Development Intern",
-    company: "VIT, Chennai, India",
-    date: "Jun 2022 – Jul 2022",
-    description: (
-      <>
-        Developed <span className="font-semibold text-primary">dynamic, reusable ReactJS components</span>, including responsive tables with configurable rows/columns, and supported{" "}
-        <span className="font-semibold text-primary">backend integration via APIs</span>. Improved UI stability by refining features, testing, and bug fixes, while contributing in{" "}
-        <span className="font-semibold text-primary">Agile workflows</span> through code reviews and team discussions.
-      </>
-    ),
-  },
   {
     icon: Brain,
     title: "Machine Learning Intern",
     company: "NeuralHire, Wylie, TX",
-    date: "Jul 2023 – Oct 2023",
+    date: "Jul 2023 – Dec 2023",
     description: (
       <>
         Built and optimized a <span className="font-semibold text-primary">real-time face detection model (HaarCascade)</span> for tracking off-screen movements, improving responsiveness in behavioral analysis and multimedia datasets. Integrated models into research pipelines and maintained{" "}
@@ -33,46 +20,59 @@ const experiences = [
   },
   {
     icon: GraduationCap,
-    title: "Teaching Assistant for Principles of Programming course (CSE340)",
-    company: "ASU Tempe",
+    title: "Teaching Assistant – Principles of Programming (CSE340)",
+    company: "Arizona State University, Tempe, AZ",
     date: "Oct 2025 – Dec 2025",
     description: (
       <>
-        Assisted in teaching this advanced course which explores the fundamental principles of programming language design, implementation, and execution. The syllabus delves into the core components of a compiler, including{" "}
+        Supported instruction of compiler theory concepts including{" "}
         <span className="font-semibold text-primary">lexical analysis with regular expressions</span>,{" "}
         <span className="font-semibold text-primary">syntax analysis using context-free grammars</span>, and{" "}
-        <span className="font-semibold text-primary">semantic analysis</span>. The curriculum also covers complex theoretical topics such as type systems, Lambda calculus, and runtime memory management, including the stack and heap. As a Teaching Assistant, I guided students through these concepts and supported their practical application by grading assignments and projects written in the{" "}
-        <span className="font-semibold text-primary">C programming language</span>.
+        <span className="font-semibold text-primary">semantic analysis</span>. Guided students through type systems, Lambda calculus, and runtime memory management, and graded assignments written in{" "}
+        <span className="font-semibold text-primary">C</span>.
+      </>
+    ),
+  },
+  {
+    icon: Users,
+    title: "Technical Officer",
+    company: "The AI Society at ASU, Tempe, AZ · Hybrid",
+    date: "Jan 2026 – May 2026",
+    description: (
+      <>
+        Mentored two teams in developing innovative project ideas focused on{" "}
+        <span className="font-semibold text-primary">Machine Learning and AI</span>. Organized weekly meetings to monitor progress and provide guidance on project direction. Fostered a{" "}
+        <span className="font-semibold text-primary">collaborative environment</span> that encouraged creativity and problem-solving among team members.
       </>
     ),
   },
 ]
 
-// Phase definitions with bold colors matching the theme
+// Phase definitions
 const phases = [
   {
-    id: "early-career",
-    title: "Early Career",
-    dateRange: "2022",
-    color: "#059669", // Primary green - bold
-    icon: Rocket,
-    experiences: [experiences[0]], // ReactJS Intern
-  },
-  {
-    id: "growth",
-    title: "Growth & Development",
+    id: "industry",
+    title: "Industry",
     dateRange: "2023",
-    color: "#ea580c", // Orange - bold
+    color: "#ea580c",
     icon: TrendingUp,
-    experiences: [experiences[1]], // ML Intern
+    experiences: [experiences[0]], // ML Intern
   },
   {
-    id: "current",
-    title: "Current Role",
+    id: "academic",
+    title: "Academic / University",
     dateRange: "2025",
-    color: "#15803d", // Darker green - bold
+    color: "#15803d",
     icon: GraduationCap,
-    experiences: [experiences[2]], // Teaching Assistant
+    experiences: [experiences[1]], // Teaching Assistant
+  },
+  {
+    id: "leadership",
+    title: "Leadership",
+    dateRange: "2026",
+    color: "#7c3aed",
+    icon: Users,
+    experiences: [experiences[2]], // Technical Officer
   },
 ]
 
@@ -111,12 +111,12 @@ export default function Experience() {
             className="absolute w-full h-full animate-wave-flow"
             style={{
               background: `
-                linear-gradient(90deg, 
-                  rgba(5, 150, 105, 0.15) 0%, 
-                  transparent 25%, 
-                  rgba(234, 88, 12, 0.15) 50%, 
-                  transparent 75%, 
-                  rgba(21, 128, 61, 0.15) 100%
+                linear-gradient(90deg,
+                  rgba(234, 88, 12, 0.15) 0%,
+                  transparent 25%,
+                  rgba(21, 128, 61, 0.15) 50%,
+                  transparent 75%,
+                  rgba(124, 58, 237, 0.15) 100%
                 )
               `,
             }}
@@ -125,10 +125,10 @@ export default function Experience() {
             className="absolute w-full h-full animate-wave-flow-reverse"
             style={{
               background: `
-                linear-gradient(180deg, 
-                  rgba(5, 150, 105, 0.1) 0%, 
-                  transparent 30%, 
-                  rgba(234, 88, 12, 0.1) 60%, 
+                linear-gradient(180deg,
+                  rgba(234, 88, 12, 0.1) 0%,
+                  transparent 30%,
+                  rgba(124, 58, 237, 0.1) 60%,
                   transparent 100%
                 )
               `,
@@ -194,7 +194,7 @@ export default function Experience() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 lg:ml-20 lg:mr-20">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">Professional Experience</h2>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">Work Experience</h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </div>
 

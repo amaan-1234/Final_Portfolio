@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, FileText, Calendar, Users, BookOpen, Award } from "lucide-react"
-import { SectionBackgroundAnimation } from "@/components/section-background-animation"
 
 const publications = [
   {
@@ -66,9 +65,8 @@ export default function Publications() {
   }, [])
 
   return (
-    <section id="publications" ref={sectionRef} className="py-20 px-4 bg-muted/30 section-fade-in relative overflow-hidden">
-      <SectionBackgroundAnimation />
-      <div className="max-w-4xl mx-auto relative z-10">
+    <section id="publications" ref={sectionRef} className="py-20 px-4 bg-muted/30 section-fade-in">
+      <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-serif font-bold text-foreground mb-4">Publications & Research</h2>
         </div>

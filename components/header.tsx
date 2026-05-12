@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ThemeToggle from "./theme-toggle"
 
@@ -14,7 +14,7 @@ const navigation = [
   { name: "Education", href: "#education" },
   { name: "Projects", href: "#projects" },
   { name: "Honors & Awards", href: "#honors-awards" },
-  { name: "Publications", href: "#publications" },
+  { name: "Certifications", href: "#certifications" },
   { name: "Contact", href: "#contact" },
 ]
 
@@ -78,7 +78,7 @@ export default function Header() {
       } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
       {/* Scroll Progress Bar */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-primary/20">
+      <div className="absolute top-0 left-0 right-0 h-[3px] bg-primary/20">
         <div
           className="h-full bg-primary transition-all duration-150 ease-out"
           style={{ width: `${scrollProgress}%` }}
@@ -106,6 +106,17 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center space-x-2">
+            <Button
+              variant="outline"
+              size="sm"
+              className="hidden sm:flex border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 gap-1.5"
+              asChild
+            >
+              <a href="/DS_Resume.pdf" download="Amaan_Mohamed_Resume.pdf">
+                <Download className="h-3.5 w-3.5" />
+                Resume
+              </a>
+            </Button>
             <ThemeToggle />
             <Button
               variant="ghost"

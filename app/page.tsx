@@ -4,9 +4,10 @@ import About from "@/components/about"
 import Experience from "@/components/experience"
 import Skills from "@/components/skills"
 import Projects from "@/components/projects"
+import FeaturedProjects from "@/components/featured-projects"
 import HonorsAwards from "@/components/honors-awards"
-import Publications from "@/components/publications"
 import Education from "@/components/education"
+import Certifications from "@/components/certifications"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import SocialSidebar from "@/components/social-sidebar"
@@ -34,14 +35,17 @@ export default function Home() {
       <section id="education">
         <Education />
       </section>
+      <section id="featured-projects">
+        <FeaturedProjects />
+      </section>
       <section id="projects">
         <Projects />
       </section>
       <section id="honors-awards">
         <HonorsAwards />
       </section>
-      <section id="publications">
-        <Publications />
+      <section id="certifications">
+        <Certifications />
       </section>
       <section id="contact">
         <Contact />

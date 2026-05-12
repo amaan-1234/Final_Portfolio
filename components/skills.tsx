@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { Search, Copy, Check, Code, Database, Brain, Sparkles, Rocket } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { SectionBackgroundAnimation } from "@/components/section-background-animation"
+
 import Image from "next/image"
 
 const techLogos: { [key: string]: string } = {
@@ -247,9 +247,8 @@ export default function Skills() {
       })
 
   return (
-    <section id="skills" ref={sectionRef} className="py-20 px-4 bg-muted/30 section-fade-in relative overflow-hidden">
-      <SectionBackgroundAnimation />
-      <div className="max-w-6xl mx-auto relative z-10">
+    <section id="skills" ref={sectionRef} className="py-20 px-4 bg-muted/30 section-fade-in">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-serif font-bold text-foreground mb-4">Skills & Expertise</h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
@@ -270,16 +269,16 @@ export default function Skills() {
             </div>
             <Button
               variant="outline"
-              size="icon"
               onClick={handleCopyAll}
-              className="border-primary text-primary hover:bg-primary/10 transition-all"
-              aria-label="Copy all skills"
+              className="border-primary text-primary hover:bg-primary/10 transition-all gap-2 whitespace-nowrap"
+              aria-label="Copy all skills for ATS"
             >
               {copied ? (
-                <Check className="h-5 w-5" />
+                <Check className="h-4 w-4" />
               ) : (
-                <Copy className="h-5 w-5" />
+                <Copy className="h-4 w-4" />
               )}
+              {copied ? "Copied!" : "Copy for ATS"}
             </Button>
           </div>
 

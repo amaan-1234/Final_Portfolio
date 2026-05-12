@@ -2,13 +2,13 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { SectionBackgroundAnimation } from "@/components/section-background-animation"
+import { MapPin, Briefcase } from "lucide-react"
 
 const stats = [
-  { number: 10, label: "Projects Completed" },
-  { number: 3, label: "Years Experience" },
-  { number: 45, label: "Technologies" },
-  { number: 1, label: "Publications" },
+  { number: 10, label: "Projects Completed", showPlus: true },
+  { number: 3, label: "Years Experience", showPlus: true },
+  { number: 45, label: "Technologies", showPlus: true },
+  { number: 1, label: "IEEE Publication", showPlus: false },
 ]
 
 export default function About() {
@@ -54,10 +54,9 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className={`py-20 bg-muted/30 transition-all duration-1000 relative overflow-hidden ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+      className={`py-20 bg-muted/30 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
     >
-      <SectionBackgroundAnimation />
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">About Me</h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
@@ -86,13 +85,52 @@ export default function About() {
                 <CardContent className="p-0">
                   <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                     {animatedStats[index]}
-                    {stat.label === "Publications" ? "" : "+"}
+                    {stat.showPlus ? "+" : ""}
                   </div>
                   <div className="text-sm text-muted-foreground font-medium">{stat.label}</div>
                 </CardContent>
               </Card>
             ))}
           </div>
+        </div>
+
+        {/* What I'm Looking For */}
+        <div className={`mt-12 transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+          <Card className="border border-primary/20 bg-primary/5">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <Briefcase className="w-5 h-5 text-primary" />
+                <h3 className="text-lg font-semibold text-foreground">Actively Seeking</h3>
+                <span className="ml-auto flex items-center gap-1.5 text-xs font-medium text-green-600 dark:text-green-400 bg-green-500/10 px-2.5 py-1 rounded-full border border-green-500/20">
+                  <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
+                  Available May 2026
+                </span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wide font-semibold mb-2">Target Roles</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {["Data Analyst", "Business Analyst", "Data Scientist", "Data Engineer"].map((role) => (
+                      <span key={role} className="px-2.5 py-1 bg-primary/10 text-primary text-xs font-medium rounded-md">
+                        {role}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wide font-semibold mb-2">Employment Type</p>
+                  <p className="text-sm text-foreground font-medium">Full-time</p>
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wide font-semibold mb-2">Location</p>
+                  <div className="flex items-center gap-1.5 text-sm text-foreground font-medium">
+                    <MapPin className="w-3.5 h-3.5 text-primary" />
+                    In-person or Remote
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

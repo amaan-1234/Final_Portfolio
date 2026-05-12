@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { GraduationCap } from "lucide-react"
-import { SectionBackgroundAnimation } from "@/components/section-background-animation"
+
 
 const education = [
   {
@@ -11,7 +11,7 @@ const education = [
     institution: "Arizona State University",
     location: "Tempe, AZ",
     period: "Aug 2024 – May 2026",
-    gpa: "3.72/4.00",
+    gpa: "3.67/4.00",
     logo: "/asu.png",
     coursework: [
       "Statistics for Data Analysts",
@@ -85,9 +85,8 @@ export default function Education() {
   }, [])
 
   return (
-    <section id="education" ref={sectionRef} className="py-20 px-4 section-fade-in relative overflow-hidden">
-      <SectionBackgroundAnimation />
-      <div className="max-w-4xl mx-auto relative z-10">
+    <section id="education" ref={sectionRef} className="py-20 px-4 section-fade-in">
+      <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-serif font-bold text-foreground mb-4">Education</h2>
         </div>
@@ -99,7 +98,7 @@ export default function Education() {
               <Card
                 key={edu.degree}
                 data-card-index={index}
-                className={`group relative overflow-hidden hover:shadow-2xl transition-all duration-700 ease-out hover:scale-[1.03] hover:-translate-y-2 border-l-4 border-l-transparent hover:border-l-primary transform-gpu hover:rotate-1 ${
+                className={`group relative overflow-hidden hover:shadow-2xl transition-all duration-700 ease-out hover:scale-[1.02] hover:-translate-y-2 border-l-4 border-l-transparent hover:border-l-primary transform-gpu ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
